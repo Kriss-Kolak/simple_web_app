@@ -2,9 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 
 
-
-
-
 def scrap():
     page = 1
     offers = []
