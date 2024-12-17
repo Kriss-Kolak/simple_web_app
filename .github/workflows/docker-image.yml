@@ -24,9 +24,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    # # Krok 3: Uruchomienie testów
-    # - name: Run Tests
-    #   run: pytest
+    # Krok 3: Uruchomienie testów
+    - name: Run Tests
+      run: pytest
 
     # Krok 4: Konfiguracja Dockera
     - name: Set up Docker Buildx
