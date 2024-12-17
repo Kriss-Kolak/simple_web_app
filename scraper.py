@@ -19,7 +19,7 @@ def scrap():
         for offer in all_offers:
             title = (offer.get('title').replace("Zobacz ofertę ", ""))
             link = offer.get('href')
-            offers.append({offer_count:{"title":title, "link":link}})
+            offers.append({"title":title, "link":link})
             offer_count += 1
         page +=1
     return(offers)
