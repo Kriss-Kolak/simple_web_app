@@ -3,11 +3,12 @@ from scraper import scrap
 
 app = Flask(__name__)
 
-data = scrap()
+
 
 
 @app.route('/')
 def home():
+    data = scrap()
     return render_template('home.html', data = data)
 
 if __name__ == '__main__':
